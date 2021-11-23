@@ -24,7 +24,7 @@ export interface IndexPageProps {
 const Home: NextPage<IndexPageProps> = (props) => {
   return (
     <div>
-        <div className='mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
+        <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
           <div className="cursor-pointer">
             <Link href='/' passHref={true}>
               <Image
@@ -40,7 +40,7 @@ const Home: NextPage<IndexPageProps> = (props) => {
             <h1 className='text-gray-300 text-5xl font-semibold'>
               {props.firstName} {props.lastName}
             </h1>
-            <h2 className='mt-2 mb-24 text-gray-400 text-lg font-thin'>
+            <h2 className='mt-2 mb-16 md:mb-24 text-gray-400 text-lg font-thin'>
               Software engineer and masters student at NC State
             </h2>
           </div>
