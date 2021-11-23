@@ -6,12 +6,15 @@ module.exports = {
       colors: {
         grayDark: '#121212',
         grayLight: '#242424',
+        grayLighter: '#292929',
         grayBg: '#2e2e2e'
       },
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      padding: ['hover']
+    },
   },
   plugins: []
 }

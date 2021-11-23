@@ -46,7 +46,6 @@ export const MobileNavBar: React.FC = () => {
             left: 0,
             top: 80,
             width: '100%',
-            // height: '50vh',
             zIndex: 1000,
           }}
         >

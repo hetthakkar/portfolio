@@ -31,7 +31,7 @@ function NavItem({ href, text }: { href: string; text: string }) {
       <a
         className={cn(
           isActive ? 'font-semibold text-gray-300' : 'font-thin text-gray-300',
-          'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800  transition-all mx-3'
+          'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800 transition-all mx-3'
         )}
       >
         <span className='capsize'>{text}</span>
