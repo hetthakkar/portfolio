@@ -25,3 +25,7 @@
 .content-box {
   @apply flex justify-start items-start w-full max-w-2xl mx-auto
 }
+
+.mobile-nav-link {
+  @apply text-2xl p-4
+}

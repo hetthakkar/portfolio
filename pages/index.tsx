@@ -24,11 +24,9 @@ export interface IndexPageProps {
 const Home: NextPage<IndexPageProps> = (props) => {
   return (
     <div>
-      {/* <div className='page'> */}
-        {/* <NavBar firstName={props.firstName} lastName={props.lastName} /> */}
         <div className='mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
           <div className="cursor-pointer">
-            <Link href='/'>
+            <Link href='/' passHref={true}>
               <Image
                 alt='Het Thakkar'
                 height={105}
@@ -63,7 +61,6 @@ const Home: NextPage<IndexPageProps> = (props) => {
             </div>
           </div>
         </TextContainer>
-      {/* </div> */}
     </div>
   )
 }

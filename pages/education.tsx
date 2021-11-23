@@ -1,6 +1,7 @@
+import { NextPage } from 'next'
 import { IBaseProps } from '../common/interfaces'
 
-const Education: React.FC<IBaseProps> = (props: IBaseProps) => {
+const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <div className='Education'>
   </div>

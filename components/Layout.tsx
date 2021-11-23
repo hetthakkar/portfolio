@@ -10,7 +10,7 @@ export const Layout: React.FC<{}> = ({ children }) => {
       </Head>
       <div className='page'>
         <NavBar />
-        {children}
+        <span id="current-page">{children}</span>
       </div>
     </div>
   )

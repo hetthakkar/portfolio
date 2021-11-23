@@ -1,8 +1,9 @@
 import { IBaseProps } from '../common/interfaces'
 import { TextContainer } from '../components/TextContainer'
 import { motion } from 'framer-motion'
+import { NextPage } from 'next'
 
-const Work: React.FC<IBaseProps> = (props: IBaseProps) => {
+const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <div className=''>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
@@ -41,7 +42,7 @@ const Work: React.FC<IBaseProps> = (props: IBaseProps) => {
         </div>
       </TextContainer>
 
-      <TextContainer>
+      <TextContainer className='mb-8'>
         <div className='card-title'>
           <span className='font-medium'>
             Software Development Engineer - Intern
@@ -66,6 +67,27 @@ const Work: React.FC<IBaseProps> = (props: IBaseProps) => {
               annotation from one PDF representation to another using Typescript
             </li>
           </ul>
+        </div>
+      </TextContainer>
+
+      <TextContainer>
+        <div className='card-title'>
+          <span className='font-medium'>Summer Research Intern</span> at Indian
+          Space Research Organization{' '}
+          <a target='_blank' rel='noreferrer' href='https://www.isro.gov.in/about-isro/space-applications-centre-sac'>
+            ISRO
+          </a>
+        </div>
+        <div className='card-text mt-4'>
+          <ul className='list-disc'>
+            <li>
+            Parallelized hyper-spectral filter algorithms and implemented CPU and GPU parallel programs using OpenMP and CUDA 
+toolkit respectively
+            </li>
+            <li>
+Improved program execution times by up to 1000x compared to the original implementation
+            </li>
+            </ul>
         </div>
       </TextContainer>
     </div>
