@@ -23,13 +23,10 @@ export interface IndexPageProps {
 
 const Home: NextPage<IndexPageProps> = (props) => {
   return (
-    <Layout>
-      <Head>
-        <title>{props.title}</title>
-      </Head>
-      <div className='flex flex-col justify-center px-8'>
-        <NavBar firstName={props.firstName} lastName={props.lastName} />
-        <div className='mt-8 flex justify-start items-start w-full max-w-2xl mx-auto'>
+    <div>
+      {/* <div className='page'> */}
+        {/* <NavBar firstName={props.firstName} lastName={props.lastName} /> */}
+        <div className='mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
           <div className="cursor-pointer">
             <Link href='/'>
               <Image
@@ -52,22 +49,22 @@ const Home: NextPage<IndexPageProps> = (props) => {
         </div>
         <TextContainer>
           <div>
-            <div className='text-gray-300 text-2xl font-normal'>About Me</div>
-            <div className='mt-4 text-gray-400 text-lg font-thin'>
+            <div className='card-title'>About Me</div>
+            <div className='mt-4 card-text'>
               I love exploring new technologies and building things that people
               would enjoy. I have experience working with technologies like
               Serverless, Typescript, React and Vue and am constantly working to
               add more to this list
             </div>
-            <div className='mt-4 text-gray-400 text-lg font-thin'>
+            <div className='mt-4 card-text'>
               Apart from web development, I like riding around on my bike,
               working out, making latte art, reading science fiction and fantasy
               books, and listening to waay too much trance and progressive music
             </div>
           </div>
         </TextContainer>
-      </div>
-    </Layout>
+      {/* </div> */}
+    </div>
   )
 }
 
