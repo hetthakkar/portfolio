@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { MenuIcon } from './MenuIcon'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
+import cn from 'classnames'
+
 export const MobileNavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -12,14 +15,14 @@ export const MobileNavBar: React.FC = () => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
-      const page = document.getElementById('current-page');
-      if(page) {
+      const page = document.getElementById('current-page')
+      if (page) {
         page.classList.add('hidden')
       }
     } else {
       document.body.style.overflow = 'unset'
-      const page = document.getElementById('current-page');
-      if(page) {
+      const page = document.getElementById('current-page')
+      if (page) {
         page.classList.remove('hidden')
       }
     }
@@ -42,26 +45,16 @@ export const MobileNavBar: React.FC = () => {
             left: 0,
             top: 80,
             width: '100%',
-            height: '50vh',
+            // height: '50vh',
             zIndex: 1000,
           }}
         >
-          <div className="flex flex-col">
-            <Link href='/'>
-              <a onClick={closeMenu} className="mobile-nav-link">Home</a>
-            </Link>
-            <Link href='/projects'>
-              <a onClick={closeMenu} className="mobile-nav-link">Projects</a>
-            </Link>
-            <Link href='/work'>
-              <a onClick={closeMenu} className="mobile-nav-link">Work Experience</a>
-            </Link>
-            <Link href='/education'>
-              <a onClick={closeMenu} className="mobile-nav-link">Education</a>
-            </Link>
-            <Link href='/contact'>
-              <a onClick={closeMenu} className="mobile-nav-link">Contact</a>
-            </Link>
+          <div className='flex flex-col'>
+            <MobileNavItem href='/' text='Home' onClick={closeMenu} />
+            <MobileNavItem href='/projects' text='Projects' onClick={closeMenu} />
+            <MobileNavItem href='/work' text='Work Experience' onClick={closeMenu} />
+            <MobileNavItem href='/education' text='Education' onClick={closeMenu} />
+            <MobileNavItem href='/contact' text='Contact' onClick={closeMenu} />
           </div>
         </motion.div>
       )}
@@ -69,15 +62,20 @@ export const MobileNavBar: React.FC = () => {
   )
 }
 
-// const MobileMenuItem: React.FC<{ href: string; children: React.ReactNode }> = ({
-//   href,
-//   children,
-// }) => {
-//   return (
-//     <Link href={href}>
-//       <a className='block px-4 py-2 text-gray-700 hover:text-gray-900'>
-//         {children}
-//       </a>
-//     </Link>
-//   )
-// }
+const MobileNavItem: React.FC<{ href: string; text: string, onClick: () => void }> = ({
+  href,
+  text,
+  onClick
+}) => {
+  const router = useRouter()
+  const isActive = router.asPath === href
+
+  return (
+    <Link href={href}>
+      <a onClick={onClick} className={
+        cn('mobile-nav-link', isActive && 'font-semibold')}>
+        {text}
+      </a>
+    </Link>
+  )
+}
