@@ -12,13 +12,15 @@ const Home: NextPage = () => {
       <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
         <div className='cursor-pointer'>
           <Link href='/' passHref={true}>
-            <Image
-              alt='Het Thakkar'
-              height={105}
-              width={105}
-              src='/jet.png'
-              className='rounded-full'
-            />
+            <a>
+              <Image
+                alt='Het Thakkar'
+                height={105}
+                width={105}
+                src='/jet.png'
+                className='rounded-full'
+              />
+            </a>
           </Link>
         </div>
         <div className='flex flex-col items-start ml-8'>

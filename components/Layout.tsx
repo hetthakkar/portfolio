@@ -19,38 +19,23 @@ export const Layout: React.FC<{}> = ({ children }) => {
       <div className='page min-h-screen'>
         <NavBar />
         <span id='current-page'>{children}</span>
-        <div
-          className='flex flex-grow items-end justify-center mt-auto'
-          // style={{
-          //   marginTop: 'clamp(2rem, 10vh, 4rem)',
-          // }}
-          // style={{
-          //   position: 'absolute',
-          //   // bottom: '1rem',
-          //   top: '95vh',
-          //   right: '0',
-          //   width: '100%',
-
-          // }}
-        >
-          <Link href='https://twitter.com/thakkarhet' passHref={true}>
-            <TwitterIcon className='fill-current text-gray-400 cursor-pointer ' />
-          </Link>
-          <Link href='https://github.com/hetthakkar' passHref={true}>
-            <GithubIcon className='fill-current text-gray-400 cursor-pointer ml-2' />
-          </Link>
-          <Link
+        <div className='flex flex-grow items-end justify-center mt-auto'>
+          <TwitterIcon
+            className='fill-current text-gray-400 cursor-pointer '
+            href='https://twitter.com/thakkarhet'
+          />
+          <GithubIcon
+            className='fill-current text-gray-400 cursor-pointer ml-2'
+            href='https://github.com/hetthakkar'
+          />
+          <LinkedInIcon
+            className='fill-current text-gray-400 cursor-pointer ml-2'
             href='https://www.linkedin.com/in/het-thakkar-3a7534125/'
-            passHref={true}
-          >
-            <LinkedInIcon className='fill-current text-gray-400 cursor-pointer ml-2' />
-          </Link>
-          <Link
+          />
+          <SpotifyIcon
+            className='fill-current text-gray-400 cursor-pointer ml-2'
             href='https://open.spotify.com/user/het.thakkar809'
-            passHref={true}
-          >
-            <SpotifyIcon className='fill-current text-gray-400 cursor-pointer ml-2' />
-          </Link>
+          />
         </div>
       </div>
     </div>
