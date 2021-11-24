@@ -14,10 +14,11 @@ const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
         <div className='card-title'>
           <span className='font-medium'>Software Development Engineer - 1</span>{' '}
           at Macak Technologies
-          <a target='_blank' rel='noreferrer' href='https://raxter.io'>
+          <a target='_blank' rel='noreferrer' href='https://raxter.io' className="link">
             (RAx Labs)
           </a>
         </div>
+        <div className='card-subtitle'>October 2020 - July 2021</div>
         <div className='card-text mt-4'>
           <ul className='list-disc'>
             <li>
@@ -48,10 +49,11 @@ const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
             Software Development Engineer - Intern
           </span>{' '}
           at Macak Technologies
-          <a target='_blank' rel='noreferrer' href='https://raxter.io'>
+          <a target='_blank' rel='noreferrer' href='https://raxter.io' className="link">
             (RAx Labs)
           </a>
         </div>
+        <div className='card-subtitle'>August 2020 - October 2020</div>
         <div className='card-text mt-4'>
           <ul className='list-disc'>
             <li>
@@ -70,14 +72,15 @@ const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
         </div>
       </TextContainer>
 
-      <TextContainer>
+      <TextContainer className="mb-8">
         <div className='card-title'>
           <span className='font-medium'>Summer Research Intern</span> at Indian
           Space Research Organization{' '}
-          <a target='_blank' rel='noreferrer' href='https://www.isro.gov.in/about-isro/space-applications-centre-sac'>
+          <a target='_blank' rel='noreferrer' href='https://www.isro.gov.in/about-isro/space-applications-centre-sac' className="link">
             ISRO
           </a>
         </div>
+        <div className='card-subtitle'>May 2019 - July 2019</div>
         <div className='card-text mt-4'>
           <ul className='list-disc'>
             <li>

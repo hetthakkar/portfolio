@@ -13,7 +13,7 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
           <div className='card-title'>
             Masters in Computer Science at{' '}
             <a
-              className='font-semibold italic'
+              className='font-semibold italic link'
               target='_blank'
               rel='noreferrer'
               href='https://ncsu.edu'
@@ -29,12 +29,12 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
           </div>
         </div>
       </TextContainer>
-      <TextContainer className="mt-8">
+      <TextContainer className="mt-8 mb-8">
         <div className='mb-4'>
           <div className='card-title'>
             Bachelor of Technology in Information and Communication Technology at{' '}
             <a
-              className='font-semibold italic'
+              className='font-semibold italic link'
               target='_blank'
               rel='noreferrer'
               href='https://daiict.ac.in'

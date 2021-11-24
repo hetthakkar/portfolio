@@ -11,7 +11,7 @@
 } */
 
 .page {
-  @apply flex flex-col justify-center px-8 pb-8
+  @apply flex flex-col justify-start px-8 pb-8
 }
 
 .card-title {
@@ -32,4 +32,10 @@
 
 .mobile-nav-link {
   @apply text-2xl p-4
+}
+
+.link {
+  @apply underline;
+  text-decoration-thickness: 0.05rem;
+  text-underline-offset: 0.1rem;
 }
