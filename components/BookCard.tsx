@@ -28,7 +28,7 @@ const BookCard: React.FC<BookCardProps> = (props) => {
     <motion.div
       {...props}
       className={classNames(
-        'flex flex-col md:flex-row w-52 md:w-full rounded-2xl text-gray-300 shadow-md ',
+        'flex flex-col md:flex-row w-52 lg:w-full rounded-2xl text-gray-300 shadow-md ',
         props.className
       )}
     >

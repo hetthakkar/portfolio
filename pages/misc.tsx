@@ -27,6 +27,43 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           className='mb-8 md:max-h-44'
         />
       </div>
+      <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
+        What I'm vibing to right now
+      </div>
+      <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-start'>
+        <iframe
+          className='w-full'
+          height='315'
+          src='https://www.youtube.com/embed/KXhp4NKVYa0'
+          title='YouTube video player'
+          frameBorder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
+        />
+      </div>
+      <div className='content-box text-white mb-4 p-2 rounded-b-lg bg-grayLight flex flex-col'>
+        <span className=' font-normal text-2xl'>
+          Marsh and Tony McGuiness Live at Anjunadeep Open Air London
+        </span>
+        <span className='font-thin text-base mt-2 leading-5'>
+          After about a year of their Twitch streams, Marsh and Tony played
+          their amazing set at Anjunadeep Open Air. I have been playing this set
+          on repeat for the past few days now.
+        </span>
+      </div>
+      <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
+        Here's a Spotify playlist I have been maintaining for the past few years with the latest dance music I really like
+      </div>
+      <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-start mb-10'>
+        <iframe
+          src='https://open.spotify.com/embed/playlist/0mp422NtfcH1VpRnXE8nD1?utm_source=generator&theme=0'
+          width='100%'
+          height='380'
+          frameBorder='0'
+          allowFullScreen={false}
+          allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+        ></iframe>
+      </div>
     </div>
   )
 }
