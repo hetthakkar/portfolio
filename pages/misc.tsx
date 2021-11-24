@@ -7,7 +7,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Currently Reading
       </div>
-      <div className='flex justify-center items center flex-wrap w-full max-w-2xl mx-auto'>
+      <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
           title='Dune'
           author='Frank Herbert'
