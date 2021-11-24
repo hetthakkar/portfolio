@@ -28,7 +28,7 @@ const Home: NextPage = () => {
           </h2>
         </div>
       </div>
-      <TextContainer className="mb-8 md:mb-0">
+      <TextContainer className="mb-8">
         <div>
           <div className='card-title'>About Me</div>
           <div className='mt-4 card-text'>

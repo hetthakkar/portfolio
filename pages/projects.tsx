@@ -49,7 +49,7 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
       </TextContainer>
       <TextContainer className='mb-8'>
         <div className='card-title flex justify-start items-center'>
-          <div className='hidden md:flex justify-center items-end'>
+          <div>
             <div>
               Automatic detection and localization of various landmarks in head
               MRI images
@@ -67,7 +67,7 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
       </TextContainer>
       <TextContainer className='mb-8'>
         <div className='card-title flex justify-start items-center'>
-          <div className='hidden md:flex justify-center items-end'>
+          <div>
             <Link href='https://github.com/hetthakkar/polly/' passHref={true}>
               <div className='link cursor-pointer'>
                 Poll Me, a scalable web polling application
