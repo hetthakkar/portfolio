@@ -40,7 +40,7 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
             popularity with many feature requests positive feedback from the
             community pouring in. It is available for download{' '}
             <Link href='https://judgementcard.games/download'>
-              <a href='' className='link'>
+              <a target="_blank" className='link'>
                 here
               </a>
             </Link>
