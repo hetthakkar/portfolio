@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://hetthakkar.me/</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://hetthakkar.me/work</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://hetthakkar.me/education</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://hetthakkar.me/contact</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://hetthakkar.me/projects</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://hetthakkar.me/misc</loc>
+    <lastmod>2016-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
