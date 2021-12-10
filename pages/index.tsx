@@ -8,7 +8,17 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <main>
+      <Head>
+        <title>Het Thakkar — Software developer</title>
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="Het Thakkar, a software developer and masters student at NC State" />
+        <meta name="og:description" content="Het Thakkar, a software developer and masters student at NC State" />
+        <meta name="og:title" content="Het Thakkar — Software developer" />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://hetthakkar.me" />
+        <meta name="og:image" content="https://hetthakkar.me/jet.png" />
+      </Head>
       <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
         <div className='cursor-pointer'>
           <Link href='/' passHref={true}>
@@ -46,7 +56,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </TextContainer>
-    </div>
+    </main>
   )
 }
 

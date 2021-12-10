@@ -1,12 +1,20 @@
 import { IBaseProps } from '../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../components/BookCard'
+import Head from 'next/head'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <div className=''>
-      <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
+    <main className=''>
+      <Head>
+        <title>Misc | Het Thakkar</title>
+        <meta
+          name='description'
+          content='Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune, Rust In Action. '
+        />
+      </Head>
+      <h1 className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Currently Reading
-      </div>
+      </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
           title='Dune'
@@ -28,13 +36,13 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         />
       </div>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
-        What I'm vibing to right now
+        What I&apos;m vibing to right now
       </div>
       <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-start'>
         <iframe
           className='w-full'
           height='315'
-          src='https://www.youtube.com/embed/KXhp4NKVYa0'
+          src='https://www.youtube.com/embed/0sWn8UEbFR0'
           title='YouTube video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -43,16 +51,17 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className='content-box text-white mb-4 p-2 rounded-b-lg bg-grayLight flex flex-col'>
         <span className=' font-normal text-2xl'>
-          Marsh and Tony McGuiness Live at Anjunadeep Open Air London
+          Deep Set 32 by Tony McGuinness from A&B
         </span>
         <span className='font-thin text-base mt-2 leading-5'>
-          After about a year of their Twitch streams, Marsh and Tony played
-          their amazing set at Anjunadeep Open Air. I have been playing this set
-          on repeat for the past few days now.
+          9 hours of pure bliss from some of the best deep artists out there,
+          Tony, Marsh and Wassau. I couldn&apos;t catch this set live but have had
+          the set on repeat for my workouts, bike rides and study sessions.
         </span>
       </div>
       <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
-        Here's a Spotify playlist I have been maintaining for the past few years with the latest dance music I really like
+        Here&apos;s a Spotify playlist I have been maintaining for the past few years
+        with the latest dance music I really like
       </div>
       <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-start mb-10'>
         <iframe
@@ -64,7 +73,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
         ></iframe>
       </div>
-    </div>
+    </main>
   )
 }
 

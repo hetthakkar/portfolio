@@ -10,16 +10,10 @@ import Link from 'next/link'
 export const Layout: React.FC<{}> = ({ children }) => {
   return (
     <div className='min-h-screen bg-gradient-to-b from-grayLight to-grayDark'>
-      <Head>
-        {' '}
-        <title>Het Thakkar</title>{' '}
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />{' '}
-        <meta name='description' content='Het Thakkar' /> <html lang='en' />{' '}
-      </Head>
       <div className='page min-h-screen'>
         <NavBar />
         <span id='current-page'>{children}</span>
-        <div className='flex flex-grow items-end justify-center mt-auto'>
+        <footer className='flex flex-grow items-end justify-center mt-auto'>
           <TwitterIcon
             className='fill-current text-gray-400 cursor-pointer '
             href='https://twitter.com/thakkarhet'
@@ -36,7 +30,7 @@ export const Layout: React.FC<{}> = ({ children }) => {
             className='fill-current text-gray-400 cursor-pointer ml-2'
             href='https://open.spotify.com/user/het.thakkar809'
           />
-        </div>
+        </footer>
       </div>
     </div>
   )

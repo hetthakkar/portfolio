@@ -10,7 +10,7 @@ export interface NavBarProps {
 
 export const NavBar: React.FC = () => {
   return (
-    <div className='flex items-center justify-start md:justify-end w-full relative max-w-2xl mx-auto text-lg text-gray-300 py-8'>
+    <header className='flex items-center justify-start md:justify-end w-full relative max-w-2xl mx-auto text-lg text-gray-300 py-8'>
       <MobileNavBar />
       <NavItem href='/' text='Home' />
       <NavItem href='/projects' text='Projects' />
@@ -18,7 +18,7 @@ export const NavBar: React.FC = () => {
       <NavItem href='/education' text='Education' />
       <NavItem href='/misc' text='Misc' />
       <NavItem href='/contact' text='Contact' />
-    </div>
+    </header>
   )
 }
 
