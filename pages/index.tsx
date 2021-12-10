@@ -5,20 +5,11 @@ import { Layout } from '../components/Layout'
 import { NavBar } from '../components/Navbar'
 import { TextContainer } from '../components/TextContainer'
 import Link from 'next/link'
+import { Container } from '../components/Container'
 
 const Home: NextPage = () => {
   return (
-    <main>
-      <Head>
-        <title>Het Thakkar — Software developer</title>
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="Het Thakkar, a software developer and masters student at NC State" />
-        <meta name="og:description" content="Het Thakkar, a software developer and masters student at NC State" />
-        <meta name="og:title" content="Het Thakkar — Software developer" />
-        <meta name="og:type" content="website" />
-        <meta name="og:url" content="https://hetthakkar.me" />
-        <meta name="og:image" content="https://hetthakkar.me/jet.png" />
-      </Head>
+    <Container>
       <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
         <div className='cursor-pointer'>
           <Link href='/' passHref={true}>
@@ -56,7 +47,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </TextContainer>
-    </main>
+    </Container>
   )
 }
 

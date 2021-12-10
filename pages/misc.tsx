@@ -1,17 +1,13 @@
 import { IBaseProps } from '../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../components/BookCard'
-import Head from 'next/head'
+import { Container } from '../components/Container'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <main className=''>
-      <Head>
-        <title>Misc | Het Thakkar</title>
-        <meta
-          name='description'
-          content='Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune, Rust In Action. '
-        />
-      </Head>
+    <Container head={{
+      title: 'Misc | Het Thakkar',
+      description: 'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune, Rust In Action. ',
+    }}>
       <h1 className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Currently Reading
       </h1>
@@ -73,7 +69,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
         ></iframe>
       </div>
-    </main>
+    </Container>
   )
 }
 

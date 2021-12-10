@@ -3,11 +3,17 @@ import { IBaseProps } from '../common/interfaces'
 import { TextContainer } from '../components/TextContainer'
 import Image from 'next/image'
 import Link from 'next/link'
-import ExternalLink from '../components/icons/ExternalLink'
+import { Container } from '../components/Container'
 
 const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <div>
+    <Container
+      head={{
+        title: 'Projects | Het Thakkar',
+        description:
+          'Some cool projects Het Thakkar has done recently including a mobile game, a ML project to find certain landmarks in a brain MRI and a serverless application for creating online polls.',
+      }}
+    >
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Projects
       </div>
@@ -40,7 +46,7 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
             popularity with many feature requests positive feedback from the
             community pouring in. It is available for download{' '}
             <Link href='https://judgementcard.games/download'>
-              <a target="_blank" className='link'>
+              <a target='_blank' className='link'>
                 here
               </a>
             </Link>
@@ -77,14 +83,18 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
         </div>
         <div>
           <div className='card-text mt-4'>
-            Built as a part of Project 1 of the course CSC510 at NCSU, this web application(with a Serverless backend and a
-            React frontend) allows users to create polls and others to join in
-            and cast their votes. The application was built with scalability in
-            mind. The source can be found <Link href="https://github.com/hetthakkar/polly/"><a className="link">here</a></Link>
+            Built as a part of Project 1 of the course CSC510 at NCSU, this web
+            application(with a Serverless backend and a React frontend) allows
+            users to create polls and others to join in and cast their votes.
+            The application was built with scalability in mind. The source can
+            be found{' '}
+            <Link href='https://github.com/hetthakkar/polly/'>
+              <a className='link'>here</a>
+            </Link>
           </div>
         </div>
       </TextContainer>
-    </div>
+    </Container>
   )
 }
 

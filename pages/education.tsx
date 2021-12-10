@@ -1,10 +1,14 @@
 import { NextPage } from 'next'
 import { IBaseProps } from '../common/interfaces'
+import { Container } from '../components/Container'
 import { TextContainer } from '../components/TextContainer'
 
 const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <div className='Education'>
+    <Container head={{
+      title: 'Education | Het Thakkar',
+      description: 'List of educational institutions attended and degrees earned by Het Thakkar', 
+    }}>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Education
       </div>
@@ -51,7 +55,7 @@ Computation, Digital Signal Processing
           </div>
         </div>
       </TextContainer>
-    </div>
+    </Container>
   )
 }
 

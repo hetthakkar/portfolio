@@ -1,11 +1,14 @@
 import { IBaseProps } from '../common/interfaces'
 import { TextContainer } from '../components/TextContainer'
-import { motion } from 'framer-motion'
 import { NextPage } from 'next'
+import { Container } from '../components/Container'
 
 const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <div className=''>
+    <Container head={{
+      title: `Work | Het Thakkar`,
+      description: `Places where Het Thakkar has worked including the job responsibilities, achievements and positions`,
+    }}>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Work Experience
       </div>
@@ -93,7 +96,7 @@ Improved program execution times by up to 1000x compared to the original impleme
             </ul>
         </div>
       </TextContainer>
-    </div>
+    </Container>
   )
 }
 
