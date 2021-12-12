@@ -6,17 +6,17 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <Container head={{
       title: 'Misc | Het Thakkar',
-      description: 'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune, Rust In Action. ',
+      description: 'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune Messiah, Rust In Action. ',
     }}>
       <h1 className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Currently Reading
       </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
-          title='Dune'
+          title='Dune Messiah'
           author='Frank Herbert'
-          description="Started reading Dune a few years ago but couldn't get into the story. Watching the movie got me back into the story and I am sold. The deep philosophy and complex world of Frank Herbert are incredibly captivating "
-          cover='/dune_cover.png'
+          description="Feeling a little conflicted getting into this book after reading all the negative reviews, but the Dune story has gotten me super interested and excited to find out what's next."
+          cover='/dune_messiah_cover.jpg'
           className='mb-8 '
           coverWidth={300}
           coverHeight={450}
