@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Layout } from '../components/Layout'
-import { NavBar } from '../components/Navbar'
 import { TextContainer } from '../components/TextContainer'
 import Link from 'next/link'
 import { Container } from '../components/Container'
+import ProfilePicture from '../public/profile.png';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +17,8 @@ const Home: NextPage = () => {
                 alt='Het Thakkar'
                 height={105}
                 width={105}
-                src='/jet.png'
+                src={ProfilePicture}
+                placeholder="empty"
                 className='rounded-full'
               />
             </a>

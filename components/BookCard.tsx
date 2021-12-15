@@ -3,7 +3,7 @@ import { motion, MotionProps } from 'framer-motion'
 import Image from 'next/image'
 interface BookCardProps extends MotionProps {
   className?: string
-  cover: string
+  cover: StaticImageData
   title: string
   author: string
   description: string
@@ -11,11 +11,10 @@ interface BookCardProps extends MotionProps {
   coverHeight: number
 }
 
-const defaultProps: BookCardProps = {
+const defaultProps: Partial<BookCardProps> = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.4, ease: 'easeOut' },
-  cover: '',
   description: '',
   author: '',
   title: '',
@@ -32,7 +31,13 @@ const BookCard: React.FC<BookCardProps> = (props) => {
         props.className
       )}
     >
-      <Image src={props.cover} alt={props.title} width={props.coverWidth} height={props.coverHeight} />
+      <Image
+        src={props.cover}
+        alt={props.title}
+        width={props.coverWidth}
+        height={props.coverHeight}
+        placeholder="blur"
+      />
       <div className='bg-grayLight p-4 rounded-b-lg md:rounded-r-lg md:rounded-b-none flex flex-col'>
         <div className='text-xl font-bold'>
           {props.title} by <i>{props.author}</i>

@@ -2,6 +2,8 @@ import { IBaseProps } from '../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../components/BookCard'
 import { Container } from '../components/Container'
+import DuneMessiahCover from '../public/dune_messiah_cover.jpg'
+import RustInActionCover from '../public/rust_in_action_cover.png'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <Container head={{
@@ -16,7 +18,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           title='Dune Messiah'
           author='Frank Herbert'
           description="Feeling a little conflicted getting into this book after reading all the negative reviews, but the Dune story has gotten me super interested and excited to find out what's next."
-          cover='/dune_messiah_cover.jpg'
+          cover={DuneMessiahCover}
           className='mb-8 '
           coverWidth={300}
           coverHeight={450}
@@ -25,7 +27,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           title='Rust in Action'
           author='Tim McNamara'
           description='I went through the Rust book about a year ago without digesting much of it. Recently came across a few Rust evangelists recommending this on Twitter and started reading it. This book goes into the motivation behind a lot of the Rust features and makes you appreciate them. '
-          cover='/rust_in_action_cover.png'
+          cover={RustInActionCover}
           coverWidth={415}
           coverHeight={519}
           className='mb-8 md:max-h-44'
