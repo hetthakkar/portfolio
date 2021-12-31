@@ -39,3 +39,31 @@
   text-decoration-thickness: 0.05rem;
   text-underline-offset: 0.1rem;
 }
+
+.bold-link::after {
+  /* height: 0;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  font-weight: bold; */
+  content: attr(data-content);
+  /* visibility: hidden; */
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+}
+/* ::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+} */
+
+::-webkit-scrollbar-track{
+  @apply bg-gradient-to-b from-grayLight to-grayDark;
+}
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}

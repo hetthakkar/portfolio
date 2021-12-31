@@ -1,14 +1,13 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import { TextContainer } from '../components/TextContainer'
 import Link from 'next/link'
 import { Container } from '../components/Container'
-import ProfilePicture from '../public/profile.png';
+import ProfilePicture from '../public/profile.png'
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container head={{ canonical: 'https://hetthakkar.me' }}>
       <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
         <div className='cursor-pointer'>
           <Link href='/' passHref={true}>
@@ -18,7 +17,7 @@ const Home: NextPage = () => {
                 height={105}
                 width={105}
                 src={ProfilePicture}
-                placeholder="empty"
+                placeholder='empty'
                 className='rounded-full'
               />
             </a>
@@ -31,19 +30,15 @@ const Home: NextPage = () => {
           </h2>
         </div>
       </div>
-      <TextContainer className="mb-8">
+      <TextContainer className='mb-8'>
         <div>
           <div className='card-title'>About Me</div>
           <div className='mt-4 card-text'>
-            I love exploring new technologies and building things that people
-            would enjoy. I have experience working with technologies like
-            Serverless, React, Vue, OpenMP, CUDA Toolkit, and am constantly working to
-            add more to this list
-          </div>
-          <div className='mt-4 card-text'>
-            Apart from web development, I like riding around on my bike, working
-            out, making latte art, reading science fiction and fantasy books,
-            and listening to waay too much trance and progressive music
+            I am a software developer and grad student. I spend most of my time
+            feeling overwhelmed by list of stuff I want to read and learn about.
+            I like exploring new places on my bike, making latte art, reading
+            science fiction and fantasy books, and listening to a lot of trance
+            and progressive music.
           </div>
         </div>
       </TextContainer>

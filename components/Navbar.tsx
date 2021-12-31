@@ -30,12 +30,13 @@ function NavItem({ href, text }: { href: string; text: string }) {
   return (
     <Link href={href}>
       <a
+        data-after={text}
         className={cn(
           isActive ? 'font-semibold text-gray-300' : 'font-thin text-gray-300',
-          'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800 transition-all mx-3'
+          'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800 mx-3 bold-link'
         )}
       >
-        <span className='capsize'>{text}</span>
+        {text}
       </a>
     </Link>
   )

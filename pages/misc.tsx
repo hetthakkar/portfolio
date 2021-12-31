@@ -6,10 +6,13 @@ import DuneMessiahCover from '../public/dune_messiah_cover.jpg'
 import RustInActionCover from '../public/rust_in_action_cover.png'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
-    <Container head={{
-      title: 'Misc | Het Thakkar',
-      description: 'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune Messiah, Rust In Action. ',
-    }}>
+    <Container
+      head={{
+        title: 'Misc | Het Thakkar',
+        description:
+          'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune Messiah, Rust In Action. ',
+      }}
+    >
       <h1 className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Currently Reading
       </h1>
@@ -40,7 +43,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className='w-full'
           height='315'
-          src='https://www.youtube.com/embed/0sWn8UEbFR0'
+          src='https://www.youtube.com/embed/zfJghW4yIyE'
           title='YouTube video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -49,17 +52,19 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className='content-box text-white mb-4 p-2 rounded-b-lg bg-grayLight flex flex-col'>
         <span className=' font-normal text-2xl'>
-          Deep Set 32 by Tony McGuinness from A&B
+          James Grant & Jody Wisternoff | Live at Anjunadeep x Printworks London
+          2021
         </span>
         <span className='font-thin text-base mt-2 leading-5'>
-          9 hours of pure bliss from some of the best deep artists out there,
-          Tony, Marsh and Wassau. I couldn&apos;t catch this set live but have had
-          the set on repeat for my workouts, bike rides and study sessions.
+          Every year James and Jody play their incredible set at Printworks and
+          play ID's that I wait to be released the entirety of the following
+          year. This year was no different. I particularly enjoyed the ID played
+          an hour into the set. What a banger!
         </span>
       </div>
       <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
-        Here&apos;s a Spotify playlist I have been maintaining for the past few years
-        with the latest dance music I really like
+        Here&apos;s a Spotify playlist I have been maintaining for the past few
+        years with the latest dance music I really like
       </div>
       <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-start mb-10'>
         <iframe

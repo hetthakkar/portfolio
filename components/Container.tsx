@@ -5,6 +5,7 @@ interface ContainerProps {
   head?: {
     title?: string
     description?: string
+    canonical?: string
   }
 }
 
@@ -34,6 +35,7 @@ export const Container: React.FC<ContainerProps> = ({ children, head }) => {
         <meta name='og:image' content={headElements.image} />
         <meta name='og:url' content={headElements.url} />
         <meta name='og:description' content={headElements.description} />
+        {headElements.canonical && <link rel='canonical' href={headElements.canonical} />}
       </Head>
       <main>{children}</main>
     </>
