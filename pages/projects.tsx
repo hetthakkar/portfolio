@@ -40,7 +40,7 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
             Kachuful is a traditional Indian card game with variants of it
             existing all across the world. It is best played with friends and
             family, however, with the pandemic, this was a little difficult. My
-            cousin Savan and I missed playing this game with the family, decided
+            cousin <a className='link' target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/savanthakkar/">Savan</a> and I missed playing this game with the family, decided
             to make a virtual substitute while in quarantine. A lot of people
             resonated with the idea with the game gaining quite a bit of
             popularity with many feature requests positive feedback from the
