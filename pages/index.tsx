@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <div className='card-title'>About Me</div>
           <div className='mt-4 card-text'>
             I am a software developer and grad student. I spend most of my time
-            feeling overwhelmed by list of stuff I want to read and learn about.
+            feeling overwhelmed by the list of stuff I want to read and learn about.
             I like exploring new places on my bike, making latte art, reading
             science fiction and fantasy books, and listening to a lot of trance
             and progressive music.
