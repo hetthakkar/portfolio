@@ -18,15 +18,6 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
-          title='Dune Messiah'
-          author='Frank Herbert'
-          description="Feeling a little conflicted getting into this book after reading all the negative reviews, but the Dune story has gotten me super interested and excited to find out what's next."
-          cover={DuneMessiahCover}
-          className='mb-8 '
-          coverWidth={300}
-          coverHeight={450}
-        />
-        <BookCard
           title='Rust in Action'
           author='Tim McNamara'
           description='I went through the Rust book about a year ago without digesting much of it. Recently came across a few Rust evangelists recommending this on Twitter and started reading it. This book goes into the motivation behind a lot of the Rust features and makes you appreciate them. '
@@ -43,23 +34,19 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className='w-full'
           height='315'
-          src='https://www.youtube.com/embed/zfJghW4yIyE'
+          src='https://www.youtube.com/embed/MEzU1HvBo6Y'
           title='YouTube video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
         />
       </div>
-      <div className='content-box text-white mb-4 p-2 rounded-b-lg bg-grayLight flex flex-col'>
+      <div className='content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col'>
         <span className=' font-normal text-2xl'>
-          James Grant & Jody Wisternoff | Live at Anjunadeep x Printworks London
-          2021
+          Above & Beyond in Guatape, Colombia for Cercle
         </span>
         <span className='font-thin text-base mt-2 leading-5'>
-          Every year James and Jody play their incredible set at Printworks and
-          play ID's that I wait to be released the entirety of the following
-          year. This year was no different. I particularly enjoyed the ID played
-          an hour into the set. What a banger!
+          Tony and Paavo from Above & Beyond play an incredible chill set on top of a mountain in Guatape, Colombia.
         </span>
       </div>
       <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
