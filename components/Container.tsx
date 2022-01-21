@@ -17,6 +17,7 @@ export const Container: React.FC<ContainerProps> = ({ children, head }) => {
     url: 'https://hetthakkar.me',
     type: 'website',
     image: 'https://hetthakkar.me/jet.png',
+    twitterImage: 'https://hetthakkar.me/jet.png',
     robots: 'index, follow',
     ...head,
   }
@@ -33,6 +34,7 @@ export const Container: React.FC<ContainerProps> = ({ children, head }) => {
         <meta name='og:title' content={headElements.title} />
         <meta name='og:type' content={headElements.type} />
         <meta name='og:image' content={headElements.image} />
+        <meta name='twitter:image' content={headElements.twitterImage} />
         <meta name='og:url' content={headElements.url} />
         <meta name='og:description' content={headElements.description} />
         {headElements.canonical && <link rel='canonical' href={headElements.canonical} />}
