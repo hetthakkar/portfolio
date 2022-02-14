@@ -2,15 +2,14 @@ import { IBaseProps } from '../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../components/BookCard'
 import { Container } from '../components/Container'
-import DuneMessiahCover from '../public/dune_messiah_cover.jpg'
-import RustInActionCover from '../public/rust_in_action_cover.png'
+import bookCover from '../public/tales.jpg'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <Container
       head={{
         title: 'Misc | Het Thakkar',
         description:
-          'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Dune Messiah, Rust In Action. ',
+          'Miscellaneous information about Het Thakkar like reading lists, music and playlists. Currently reading Bloodcurdling Tales of Horror and the Macabre',
       }}
     >
       <h1 className='content-box text-white font-bold text-4xl mb-10 mt-8'>
@@ -18,12 +17,12 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
-          title='Rust in Action'
-          author='Tim McNamara'
-          description='I went through the Rust book about a year ago without digesting much of it. Recently came across a few Rust evangelists recommending this on Twitter and started reading it. This book goes into the motivation behind a lot of the Rust features and makes you appreciate them. '
-          cover={RustInActionCover}
-          coverWidth={415}
-          coverHeight={519}
+          title='Bloodcurdling Tales of Horror and the Macabre'
+          author='H. P. Lovecraft'
+          description='Regardless of the views of the author, I really enjoyed a few stories I have read of H.P. Lovecraft. Looking forward to reading some great horror stories'
+          cover={bookCover}
+          coverWidth={300}
+          coverHeight={500}
           className='mb-8 md:max-h-44'
         />
       </div>
