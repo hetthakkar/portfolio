@@ -16,8 +16,8 @@ export const Container: React.FC<ContainerProps> = ({ children, head }) => {
       'Het Thakkar, a software developer and masters student at NC State',
     url: 'https://hetthakkar.me',
     type: 'website',
-    image: 'https://hetthakkar.me/jet.png',
-    twitterImage: 'https://hetthakkar.me/jet.png',
+    image: 'https://hetthakkar.me/profile.png',
+    twitterImage: 'https://hetthakkar.me/profile.png',
     robots: 'index, follow',
     ...head,
   }
