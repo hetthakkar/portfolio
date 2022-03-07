@@ -6,6 +6,7 @@ import GithubIcon from './icons/GithubIcon'
 import LinkedInIcon from './icons/LinkedInIcon'
 import SpotifyIcon from './icons/SpotifyIcon'
 import Link from 'next/link'
+import InstagramIcon from './icons/InstagramIcon'
 
 export const Layout: React.FC<{}> = ({ children }) => {
   return (
@@ -13,22 +14,26 @@ export const Layout: React.FC<{}> = ({ children }) => {
       <div className='page min-h-screen'>
         <NavBar />
         <span id='current-page'>{children}</span>
-        <footer className='flex flex-grow items-end justify-center mt-auto'>
+        <footer className='flex flex-grow items-end justify-center mt-auto gap-2'>
           <TwitterIcon
-            className='fill-current text-gray-400 cursor-pointer '
+            className='footer-icon '
             href='https://twitter.com/thakkarhet'
           />
           <GithubIcon
-            className='fill-current text-gray-400 cursor-pointer ml-2'
+            className='footer-icon'
             href='https://github.com/hetthakkar'
           />
           <LinkedInIcon
-            className='fill-current text-gray-400 cursor-pointer ml-2'
+            className='footer-icon'
             href='https://www.linkedin.com/in/het-thakkar-3a7534125/'
           />
           <SpotifyIcon
-            className='fill-current text-gray-400 cursor-pointer ml-2'
+            className='footer-icon'
             href='https://open.spotify.com/user/het.thakkar809'
+          />
+          <InstagramIcon 
+            className='footer-icon'
+            href='https://www.instagram.com/thakkar.het/'
           />
         </footer>
       </div>
