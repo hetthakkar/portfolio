@@ -33,7 +33,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className='w-full'
           height='315'
-          src='https://www.youtube.com/embed/jdZSjikCKNg'
+          src='https://www.youtube.com/embed/0p0DTgH6GjQ'
           title='YouTube video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -42,12 +42,11 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className='content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col'>
         <span className=' font-normal text-2xl'>
-          Marsh DJ Set - Seven Sisters, Sussex (4K)
+          Romain Garcia - Before You Go EP (Live)
         </span>
         <span className='font-thin text-base mt-2 leading-5'>
-          One of my top artists of all time Marsh, played an incredible set
-          above the white cliffs of Sussex. I&apos;ve had the set on repeat
-          since it came out
+          This EP is just perfect. It&apos;s exactly the kind of music I love to
+          hear and it hits just the right spot
         </span>
       </div>
       <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
