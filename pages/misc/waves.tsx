@@ -119,10 +119,15 @@ const Waves: NextPage = () => {
         <title>Waves generative animation</title>
         <meta name='description' content='Waves generative animation made with p5.js' />
         <meta name='keywords' content='Waves, generative, animation, p5.js, processing, javascript' />
-        <meta name='image' content='https://hetthakkar.me/profile.png'  />
+        <meta name='image' content='https://hetthakkar.me/waves.png'  />
         <meta property='og:title' content='Waves generative animation' />
         <meta property='og:description' content='Waves generative animation made with p5.js' />
-        <meta property='og:image' content='https://hetthakkar.me/profile.png' />
+        <meta property='og:image' content='https://hetthakkar.me/waves.png' />
+        <meta property='og:url' content='https://hetthakkar.me/misc/waves' />
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:title' content='Waves generative animation' />
+        <meta property='twitter:description' content='Waves generative animation made with p5.js' />
+        <meta property='twitter:image' content='https://hetthakkar.me/waves.png' />
       </Head>
       <Sketch setup={setup} draw={draw} />
       <div className="flex gap-4">
