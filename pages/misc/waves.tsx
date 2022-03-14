@@ -207,7 +207,7 @@ const Waves: NextPage = () => {
             setN(getRandomInt(5, 20))
             setAngleDelay(getRandomFloat(0.1, 0.7))
             setRectangleWidth(getRandomInt(1, 6))
-            setRectangleHeight(getRandomInt(30, 100))
+            setRectangleHeight(getRandomInt(15, 80))
             setXPhaseMultiplier(getRandomInt(1, 15))
             setYPhaseMultiplier(getRandomInt(1, 15))
             setAnimationDuration(getRandomFloat(0.5, 2))
