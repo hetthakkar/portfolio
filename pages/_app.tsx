@@ -6,7 +6,7 @@ import { Layout } from '../components/Layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
-  if(Component.displayName === 'Sines') {
+  if(Component.displayName === 'Waves') {
     return <Component {...pageProps} />
   }
 

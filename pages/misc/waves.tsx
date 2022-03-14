@@ -3,6 +3,7 @@ import p5Types from 'p5'
 import dynamic from 'next/dynamic'
 import { useEffect, useState } from 'react'
 import {useRouter} from 'next/router'
+import Head from 'next/head'
 
 const Sketch = dynamic(() => import('react-p5'), { ssr: false })
 
@@ -48,7 +49,7 @@ const drawRotatedRect = (
   p5.pop()
 }
 
-const Sines: NextPage = () => {
+const Waves: NextPage = () => {
   let [m, setM] = useState<number>(15)
   let [n, setN] = useState<number>(15)
   let [angleDelay, setAngleDelay] = useState<number>(0.14)
@@ -78,7 +79,7 @@ const Sines: NextPage = () => {
 
   useEffect(() => {
     // Change value of query param m in uri
-    router.replace(`/art/sines?m=${m}&n=${n}&angleDelay=${angleDelay}&rectangleWidth=${rectangleWidth}&rectangleHeight=${rectangleHeight}&xPhaseMultiplier=${xPhaseMultiplier}&yPhaseMultiplier=${yPhaseMultiplier}&animationDuration=${animationDuration}&gap=${gap}&flipX=${flipX}&flipY=${flipY}`)
+    router.replace(`/misc/waves?m=${m}&n=${n}&angleDelay=${angleDelay}&rectangleWidth=${rectangleWidth}&rectangleHeight=${rectangleHeight}&xPhaseMultiplier=${xPhaseMultiplier}&yPhaseMultiplier=${yPhaseMultiplier}&animationDuration=${animationDuration}&gap=${gap}&flipX=${flipX}&flipY=${flipY}`)
   }, [m, n, angleDelay, rectangleWidth, rectangleHeight, xPhaseMultiplier, yPhaseMultiplier, animationDuration, gap, flipX, flipY])
 
 
@@ -92,13 +93,7 @@ const Sines: NextPage = () => {
 
   const draw = (p5: p5Types) => {
     p5.background(0)
-    // Get mouse x, y
 
-    // p5.textSize(20)
-    // p5.text(angle(p5.frameCount, animationDuration), 50, 50)
-
-    // let m = 8;
-    // let n = 8;
     let xStart = p5.width / 2 - ((m - 1) * gap) / 2 - rectangleWidth / 2
     let yStart = p5.height / 2 - ((n - 1) * gap) / 2 - rectangleHeight / 2
     // Draw grid of rotatedRectangles
@@ -120,6 +115,15 @@ const Sines: NextPage = () => {
 
   return (
     <div className='w-screen h-screen bg-black flex flex-col justify-center items-center'>
+      <Head>
+        <title>Waves generative animation</title>
+        <meta name='description' content='Waves generative animation made with p5.js' />
+        <meta name='keywords' content='Waves, generative, animation, p5.js, processing, javascript' />
+        <meta name='image' content='https://hetthakkar.me/profile.png'  />
+        <meta property='og:title' content='Waves generative animation' />
+        <meta property='og:description' content='Waves generative animation made with p5.js' />
+        <meta property='og:image' content='https://hetthakkar.me/profile.png' />
+      </Head>
       <Sketch setup={setup} draw={draw} />
       <div className="flex gap-4">
         <button
@@ -156,6 +160,6 @@ const Sines: NextPage = () => {
   )
 }
 
-Sines.displayName = 'Sines'
+Waves.displayName = 'Waves'
 
-export default Sines
+export default Waves
