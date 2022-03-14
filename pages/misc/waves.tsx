@@ -185,9 +185,8 @@ const Waves: NextPage = () => {
       </Head>
       <Sketch setup={setup} draw={draw} />
       <div className='flex gap-4'>
-        {/* Add home image button */}
         <Link href="/">
-          <a className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5 mt-5'>
+          <a className='default-button mb-5 mt-5'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               x='0px'
@@ -202,7 +201,7 @@ const Waves: NextPage = () => {
           </a>
         </Link>
         <button
-          className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5 mt-5'
+          className='default-button mb-5 mt-5'
           onClick={() => {
             setM(getRandomInt(5, 20))
             setN(getRandomInt(5, 20))
@@ -219,8 +218,11 @@ const Waves: NextPage = () => {
         >
           Randomize
         </button>
-        <button
-          className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-5 mt-5'
+        
+      </div>
+      <div>
+      <button
+          className='default-button'
           onClick={() => {
             // Share current url
             navigator.share({
@@ -228,7 +230,7 @@ const Waves: NextPage = () => {
             })
           }}
         >
-          Share
+          Share current version
         </button>
       </div>
     </div>
