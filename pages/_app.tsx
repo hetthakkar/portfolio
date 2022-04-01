@@ -5,6 +5,11 @@ import { Layout } from '../components/Layout'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  if(Component.displayName === 'Waves') {
+    return <Component {...pageProps} />
+  }
+
   return (
     <Layout>
       <Component {...pageProps} firstName={"Het"} lastName={"Thakkar"} />

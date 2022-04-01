@@ -1,8 +1,11 @@
-import { IBaseProps } from '../common/interfaces'
+import { IBaseProps } from '../../common/interfaces'
 import { NextPage } from 'next'
-import { BookCard } from '../components/BookCard'
-import { Container } from '../components/Container'
-import bookCover from '../public/children.jpg'
+import { BookCard } from '../../components/BookCard'
+import { Container } from '../../components/Container'
+import bookCover from '../../public/children.jpg'
+import Link from 'next/link'
+import Image from 'next/image'
+import waves from '../../public/waves.png'
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <Container
@@ -25,6 +28,25 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           coverHeight={380}
           className='mb-8 md:max-h-44'
         />
+      </div>
+      <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
+        Check out my generative art
+      </div>
+      <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-center'>
+        <div className='flex flex-col justify-center items-center bg-grayLight rounded-lg'>
+          <Link href="/misc/waves">
+            <a>
+              <Image
+                src={waves}
+                alt='Waves artwork'
+                width={300}
+                height={280}
+              />
+            </a>
+          </Link>
+          <p className='text-white px-4 pb-2 pt-1'
+          >Waves🌊</p>
+        </div>
       </div>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         What I&apos;m vibing to right now
