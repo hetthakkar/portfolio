@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { TextContainer } from '../components/TextContainer'
 import Link from 'next/link'
 import { Container } from '../components/Container'
-import ProfilePicture from '../public/profile.png'
+import ProfilePicture from '../public/profile.jpg'
 
 const Home: NextPage = () => {
   return (
