@@ -2,10 +2,12 @@ import { IBaseProps } from '../../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../../components/BookCard'
 import { Container } from '../../components/Container'
-import bookCover from '../../public/children.jpg'
+import bookCover from '../../public/foundation.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 import waves from '../../public/waves.png'
+import ExternalLink from '../../components/icons/ExternalLink'
+
 const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
   return (
     <Container
@@ -20,11 +22,11 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
-          title='Children of Dune'
-          author='Frank Herbert'
-          description='Dune Messiah set up a super interesting world, excited to see where this book goes even more excited to see how this gets adapted into a movie.'
+          title='Foundation'
+          author='Isaac Asimov'
+          description={`Finally catching up with this one having had it on my reading list for years. Really enjoying the style where interesting events over centuries are carefully stitched together and each chapter ends in cliffhangers.`}
           cover={bookCover}
-          coverWidth={250}
+          coverWidth={280}
           coverHeight={380}
           className='mb-8 md:max-h-44'
         />
@@ -32,22 +34,16 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         Check out my generative art
       </div>
+          <Link href='/misc/waves'>
+            <a>
       <div className='w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-center'>
         <div className='flex flex-col justify-center items-center bg-grayLight rounded-lg'>
-          <Link href="/misc/waves">
-            <a>
-              <Image
-                src={waves}
-                alt='Waves artwork'
-                width={300}
-                height={280}
-              />
-            </a>
-          </Link>
-          <p className='text-white px-4 pb-2 pt-1'
-          >Waves🌊</p>
+              <Image src={waves} alt='Waves artwork' width={300} height={280} />
+          <p className='text-white px-4 pb-2 pt-1 hover:underline'>Waves🌊 <ExternalLink className='text-white inline scale-75 -ml-1 -mt-0.5' /> </p>
         </div>
       </div>
+            </a>
+          </Link>
       <div className='content-box text-white font-bold text-4xl mb-10 mt-8'>
         What I&apos;m vibing to right now
       </div>
@@ -55,7 +51,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className='w-full'
           height='315'
-          src='https://www.youtube.com/embed/QM7L27N8-rE'
+          src='https://www.youtube.com/embed/QOG5cRsy8RQ'
           title='YouTube video player'
           frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -64,13 +60,13 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className='content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col'>
         <span className=' font-normal text-2xl'>
-          Anjunadeep 13 - Mixed by Jody Wisternoff & James Grant (Live from Lake
-          Skadar, Montenegro)
+          Anjunadeep Explorations 2022 mixed by Daniel Curpen
         </span>
         <span className='font-thin text-base mt-2 leading-5'>
-          What&apos;s better than one of the best deep albums ever to be
-          released? The best deep album played by James Grant and Jody
-          Wisternoff(Who I met recently🤯) at the top of a lake in Montenegro.
+          Capturing the vibe of this years Albanian Anjunadeep pilgrimage, this
+          wonderful mix has all the Anjuna tracks I cannot stop replaying these
+          days. Going to Explorations is on the top of my bucket list and I hope
+          I can sometime soon.
         </span>
       </div>
       <div className='content-box text-gray-200 mb-2 mt-10 text-2xl flex flex-col'>
