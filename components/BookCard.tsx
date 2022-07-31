@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import { motion, MotionProps } from 'framer-motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 interface BookCardProps extends MotionProps {
   className?: string
   cover: StaticImageData
