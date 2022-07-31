@@ -43,16 +43,16 @@ const Contact: NextPage<IBaseProps> = (props: IBaseProps) => {
             }
           }>
             <div className="flex flex-col">
-              {/* <label htmlFor="name" className="card-text">Your name</label> */}
+              <label htmlFor="name" className="hidden">Your name</label>
               <input type="text" id="name" required name="name" value={name} onChange={(e) => setName(e.target.value)} 
                 className='w-full bg-grayBg shadow-md border border-gray-300 text-gray-200 rounded-lg p-2 mb-8'
                 placeholder='Your name' />
                
-              {/* <label htmlFor="email" className="card-text mt-6">Your email</label> */}
+              <label htmlFor="email" className="hidden">Your email</label>
               <input type="email" required id="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)}
               className='w-full bg-grayBg shadow-md border border-gray-300 text-gray-200 rounded-lg p-2 mb-8'
               placeholder='Your email' />
-              {/* <label htmlFor="message" className="card-text mt-6">Your message</label> */}
+              <label htmlFor="message" className="hidden">Your message</label>
               <textarea id="message" required name="message" value={message} onChange={(e) => setMessage(e.target.value)}
               className='w-full bg-grayBg shadow-md border border-gray-300 text-gray-200 rounded-lg p-2'
               placeholder='Your message' />

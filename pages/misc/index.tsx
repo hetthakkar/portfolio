@@ -2,7 +2,7 @@ import { IBaseProps } from '../../common/interfaces'
 import { NextPage } from 'next'
 import { BookCard } from '../../components/BookCard'
 import { Container } from '../../components/Container'
-import bookCover from '../../public/foundation.jpg'
+import bookCover from '../../public/foundation_and_empire.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
 import waves from '../../public/waves.png'
@@ -22,9 +22,9 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className='flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto'>
         <BookCard
-          title='Foundation'
+          title='Foundation and Empire'
           author='Isaac Asimov'
-          description={`Finally catching up with this one having had it on my reading list for years. Really enjoying the style where interesting events over centuries are carefully stitched together and each chapter ends in cliffhangers.`}
+          description="After becoming Seldon-pilled by the first book in the Foundation series, I cannot wait to see what new challenges the Foundation will face following the fall of the Galactic Empire"
           cover={bookCover}
           coverWidth={280}
           coverHeight={380}

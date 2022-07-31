@@ -22,6 +22,10 @@
   @apply text-gray-300 text-base font-thin
 }
 
+.card-subsubtitle {
+  @apply text-gray-300 text-sm font-thin
+}
+
 .card-text {
   @apply text-gray-300 text-lg font-thin
 }
