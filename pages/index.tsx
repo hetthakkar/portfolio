@@ -39,9 +39,6 @@ const Home: NextPage = () => {
             I like exploring new places on my bike, making latte art, reading
             science fiction and fantasy books, and listening to a lot of trance
             and progressive music. 
-            <br />
-            I am currently looking for Software Engineering roles starting January 2023.
-            So if you have any leads or would like to hire me, please <Link href="/contact" target="_blank" passHref={true}><a className='underline'>let me know</a></Link>
           </div>
         </div>
       </TextContainer>
