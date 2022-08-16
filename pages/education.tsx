@@ -13,7 +13,7 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
         Education
       </div>
       <TextContainer>
-        <div className='mb-4'>
+        <div>
           <div className='card-title'>
             Masters in Computer Science at{' '}
             <a
@@ -27,14 +27,9 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
           </div>
           <div className='card-subtitle'>August 2021 - May 2023</div>
         </div>
-        <div>
-          <div className="card-text">
-          Select coursework: Software Engineering, Design and Analysis of Algorithms, Database Management Systems
-          </div>
-        </div>
       </TextContainer>
       <TextContainer className="mt-8 mb-8">
-        <div className='mb-4'>
+        <div >
           <div className='card-title'>
             Bachelor of Technology in Information and Communication Technology at{' '}
             <a
@@ -47,12 +42,6 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
             </a>
           </div>
           <div className='card-subtitle'>August 2016 - May 2020</div>
-        </div>
-        <div>
-          <div className="card-text">
-          Select coursework: Machine learning for data mining, High-Performance Computing, Modeling and Simulation, Quantum 
-Computation, Digital Signal Processing
-          </div>
         </div>
       </TextContainer>
     </Container>
