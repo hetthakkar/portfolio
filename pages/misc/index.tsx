@@ -24,7 +24,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <BookCard
           title="A Fire Upon the Deep"
           author="Vernon Vinge"
-          description="Working my way through Hugo Award winning science fiction books. Really enjoying the world building in this one with some of the most unique aliens I've seen"
+          description="Working my way through Hugo Award winning science fiction books. Really enjoying the world building in this one with some of the most unique aliens I've ever seen imagined."
           cover={bookCover}
           coverWidth={280}
           coverHeight={380}
