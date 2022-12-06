@@ -72,11 +72,14 @@ const MobileNavItem: React.FC<{ href: string; text: string, onClick: () => void 
   const isActive = router.asPath === href
 
   return (
-    <Link href={href}>
-      <a onClick={onClick} className={
+    (<Link
+      href={href}
+      onClick={onClick}
+      className={
         cn('mobile-nav-link', isActive && 'font-semibold')}>
-        {text}
-      </a>
-    </Link>
-  )
+
+      {text}
+
+    </Link>)
+  );
 }

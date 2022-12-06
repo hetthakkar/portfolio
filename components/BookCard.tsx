@@ -31,13 +31,15 @@ const BookCard: React.FC<BookCardProps> = (props) => {
         props.className
       )}
     >
-      <Image
-        src={props.cover}
-        alt={props.title}
-        width={props.coverWidth}
-        height={props.coverHeight}
-        placeholder="blur"
-      />
+      <div className='max-w-xs max-h-64'>
+        <Image
+          src={props.cover}
+          alt={props.title}
+          placeholder="blur"
+          width={props.coverWidth}
+          height={props.coverHeight}
+        />
+      </div>
       <div className='bg-grayLight p-4 rounded-b-lg md:rounded-r-lg md:rounded-b-none flex flex-col'>
         <div className='text-xl font-bold'>
           {props.title} by <i>{props.author}</i>

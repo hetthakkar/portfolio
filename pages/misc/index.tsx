@@ -2,7 +2,7 @@ import { IBaseProps } from "../../common/interfaces";
 import { NextPage } from "next";
 import { BookCard } from "../../components/BookCard";
 import { Container } from "../../components/Container";
-import bookCover from "../../public/a-fire-upon-the-deep.jpg";
+import bookCover from "../../public/the_whisperer_in_darkness.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import waves from "../../public/waves.png";
@@ -22,30 +22,29 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="A Fire Upon the Deep"
-          author="Vernon Vinge"
-          description="Working my way through Hugo Award winning science fiction books. Really enjoying the world building in this one with some of the most unique aliens I've ever seen imagined."
+          title="The Whisperer in Darkness"
+          author="H.P. Lovecraft"
+          description="Wanted to switch it up for a while and read some horror. This has been on my list for a while and I'm finally getting around to it. I'm only a few chapters in but it's already pretty good."
           cover={bookCover}
-          coverWidth={280}
-          coverHeight={380}
-          className="mb-8 md:max-h-44"
+          coverWidth={300}
+          coverHeight={360}
+          className="mb-8 md:max-h-64"
         />
       </div>
       <div className="content-box text-white font-bold text-4xl mb-10 mt-8">
         Check out my generative art
       </div>
-      <Link href="/misc/waves">
-        <a>
-          <div className="w-full max-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-center">
-            <div className="flex flex-col justify-center items-center bg-grayLight rounded-lg">
-              <Image src={waves} alt="Waves artwork" width={300} height={280} />
-              <p className="text-white px-4 pb-2 pt-1 hover:underline">
-                Waves🌊{" "}
-                <ExternalLink className="text-white inline scale-75 -ml-1 -mt-0.5" />{" "}
-              </p>
-            </div>
+      <Link href="/misc/waves" passHref={true}>
+        <div className="w-full codemax-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-center">
+          <div className="flex flex-col justify-center items-center bg-grayLight rounded-lg">
+            <Image src={waves} alt="Waves artwork" width={300} height={280} />
+            <p className="text-white px-4 pb-2 pt-1 hover:underline">
+              Waves🌊{" "}
+              <ExternalLink className="text-white inline scale-75 -ml-1 -mt-0.5" />{" "}
+            </p>
           </div>
-        </a>
+        </div>
+
       </Link>
       <div className="content-box text-white font-bold text-4xl mb-10 mt-8">
         What I&apos;m vibing to right now
@@ -54,7 +53,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/S299U0xUp-c"
+          src="https://www.youtube.com/embed/XNRFFwKMd3g"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -63,7 +62,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-        Marsh | Live at Anjunadeep pres. Explorations 2022
+        Marsh DJ Set - Live from Worthing Pier, UK
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>

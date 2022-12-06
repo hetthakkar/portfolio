@@ -18,7 +18,10 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
         Projects
       </div>
       <TextContainer className='mb-8'>
-        <Link href='https://judgementcard.games/download' passHref={true}>
+        <Link
+          href='https://judgementcard.games/download'
+          passHref={true}
+          legacyBehavior>
           <div className='card-title flex justify-start items-center cursor-pointer'>
             <div className='hidden md:flex justify-center items-end'>
               <Image
@@ -45,10 +48,13 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
             resonated with the idea with the game gaining quite a bit of
             popularity with many feature requests positive feedback from the
             community pouring in. It is available for download{' '}
-            <Link href='https://judgementcard.games/download'>
-              <a target='_blank' className='link'>
+            <Link
+              href='https://judgementcard.games/download'
+              target='_blank'
+              className='link'>
+              
                 here
-              </a>
+              
             </Link>
           </div>
         </div>
@@ -74,7 +80,10 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
       <TextContainer className='mb-8'>
         <div className='card-title flex justify-start items-center'>
           <div>
-            <Link href='https://github.com/hetthakkar/polly/' passHref={true}>
+            <Link
+              href='https://github.com/hetthakkar/polly/'
+              passHref={true}
+              legacyBehavior>
               <div className='link cursor-pointer'>
                 Poll Me, a scalable web polling application
               </div>
@@ -88,14 +97,14 @@ const Projects: NextPage<IBaseProps> = (props: IBaseProps) => {
             users to create polls and others to join in and cast their votes.
             The application was built with scalability in mind. The source can
             be found{' '}
-            <Link href='https://github.com/hetthakkar/polly/'>
-              <a className='link'>here</a>
+            <Link href='https://github.com/hetthakkar/polly/' className='link'>
+              here
             </Link>
           </div>
         </div>
       </TextContainer>
     </Container>
-  )
+  );
 }
 
 export default Projects

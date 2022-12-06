@@ -28,16 +28,16 @@ function NavItem({ href, text }: { href: string; text: string }) {
   const isActive = router.asPath === href
 
   return (
-    <Link href={href}>
-      <a
-        data-after={text}
-        className={cn(
-          isActive ? 'font-semibold text-gray-300' : 'font-thin text-gray-300',
-          'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800 mx-3 bold-link'
-        )}
-      >
-        {text}
-      </a>
-    </Link>
-  )
+    (<Link
+      href={href}
+      data-after={text}
+      className={cn(
+        isActive ? 'font-semibold text-gray-300' : 'font-thin text-gray-300',
+        'hidden md:inline-block p-1 rounded-lg hover:bg-gray-800 mx-3 bold-link'
+      )}>
+
+      {text}
+
+    </Link>)
+  );
 }

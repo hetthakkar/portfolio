@@ -11,16 +11,14 @@ const Home: NextPage = () => {
       <div className='md:mt-8 flex flex-col items-center sm:flex-row sm:items-start justify-start w-full max-w-2xl mx-auto'>
         <div className='cursor-pointer'>
           <Link href='/' passHref={true}>
-            <a>
-              <Image
-                alt='Het Thakkar'
-                height={105}
-                width={105}
-                src={ProfilePicture}
-                placeholder='empty'
-                className='rounded-full'
-              />
-            </a>
+            <Image
+              alt='Het Thakkar'
+              width={105}
+              height={105}
+              src={ProfilePicture}
+              placeholder='empty'
+              className='rounded-full'
+            />
           </Link>
         </div>
         <div className='flex flex-col items-start ml-8'>
@@ -43,7 +41,7 @@ const Home: NextPage = () => {
         </div>
       </TextContainer>
     </Container>
-  )
+  );
 }
 
 export default Home
