@@ -2,7 +2,7 @@ import { IBaseProps } from "../../common/interfaces";
 import { NextPage } from "next";
 import { BookCard } from "../../components/BookCard";
 import { Container } from "../../components/Container";
-import bookCover from "../../public/the_whisperer_in_darkness.jpg";
+import bookCover from "../../public/a_song_for_lyajpg.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import waves from "../../public/waves.png";
@@ -22,9 +22,9 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="The Whisperer in Darkness"
-          author="H.P. Lovecraft"
-          description="Wanted to switch it up for a while and read some horror. This has been on my list for a while and I'm finally getting around to it. I'm only a few chapters in but it's already pretty good."
+          title="A Song for Lya"
+          author="George R. R. Martin"
+          description="I've been meaning to get into the Game of Thrones books for a while now. Testing the waters with this novella before diving into the series."
           cover={bookCover}
           coverWidth={300}
           coverHeight={360}
@@ -53,7 +53,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/XNRFFwKMd3g"
+          src="https://www.youtube.com/embed/Ol4VYn1Zfzo"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -62,7 +62,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-        Marsh DJ Set - Live from Worthing Pier, UK
+        James Grant | Bali Sunset DJ Mix from Balangan Cliffs (4K)
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>

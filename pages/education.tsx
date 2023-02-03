@@ -25,7 +25,7 @@ const Education: NextPage<IBaseProps> = (props: IBaseProps) => {
               North Carolina State University
             </a>
           </div>
-          <div className='card-subtitle'>August 2021 - May 2023</div>
+          <div className='card-subtitle'>August 2021 - December 2022</div>
         </div>
       </TextContainer>
       <TextContainer className="mt-8 mb-8">

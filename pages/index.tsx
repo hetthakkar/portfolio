@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <div className='flex flex-col items-start ml-8'>
           <h1 className='text-gray-300 text-5xl font-semibold'>Het Thakkar</h1>
           <h2 className='mt-2 mb-16 md:mb-24 text-gray-400 text-lg font-thin'>
-            Software engineer and masters student at NC State
+            Software engineer
           </h2>
         </div>
       </div>
@@ -32,9 +32,8 @@ const Home: NextPage = () => {
         <div>
           <div className='card-title'>About Me</div>
           <div className='mt-4 card-text'>
-            I am a software developer and grad student. I spend most of my time
-            feeling overwhelmed by the list of stuff I want to read and learn about.
-            I like exploring new places on my bike, making latte art, reading
+            I am a software engineer who enjoys building cool things.
+            I like exploring new places on my bike, lifting weights, making latte art, reading
             science fiction and fantasy books, and listening to a lot of trance
             and progressive music. 
           </div>
