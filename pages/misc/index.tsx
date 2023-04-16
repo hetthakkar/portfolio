@@ -2,7 +2,7 @@ import { IBaseProps } from "../../common/interfaces";
 import { NextPage } from "next";
 import { BookCard } from "../../components/BookCard";
 import { Container } from "../../components/Container";
-import bookCover from "../../public/a_song_for_lyajpg.jpg";
+import bookCover from "../../public/the_dark_forest.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import waves from "../../public/waves.png";
@@ -22,11 +22,11 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="A Song for Lya"
-          author="George R. R. Martin"
-          description="I've been meaning to get into the Game of Thrones books for a while now. Testing the waters with this novella before diving into the series."
+          title="The Dark Forest"
+          author="Cixin Liu"
+          description="After picking up the Remembrance of Earth's Past trilogy, I was hooked on Cixin Liu's writing. The Dark Forest is the second book in the trilogy and I am really enjoying it so far. The book is a sequel to The Three-Body Problem and continues the story of the Trisolaran invasion of Earth. The book is a bit more philosophical than the first book and I am really enjoying it."
           cover={bookCover}
-          coverWidth={300}
+          coverWidth={700}
           coverHeight={360}
           className="mb-8 md:max-h-64"
         />
@@ -44,7 +44,6 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
             </p>
           </div>
         </div>
-
       </Link>
       <div className="content-box text-white font-bold text-4xl mb-10 mt-8">
         What I&apos;m vibing to right now
@@ -53,16 +52,16 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/Ol4VYn1Zfzo"
+          src="https://www.youtube.com/embed/gaI7fdfyBHQ"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-        James Grant | Bali Sunset DJ Mix from Balangan Cliffs (4K)
+          Anjunadeep 14 - Mixed By James Grant & Jody Wisternoff (Live from
+          Qarraba Bay, Malta)
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>
@@ -75,7 +74,6 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           src="https://open.spotify.com/embed/playlist/0mp422NtfcH1VpRnXE8nD1?utm_source=generator&theme=0"
           width="100%"
           height="380"
-          frameBorder="0"
           allowFullScreen={false}
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
