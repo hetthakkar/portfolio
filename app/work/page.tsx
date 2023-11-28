@@ -1,23 +1,20 @@
-import { IBaseProps } from "../common/interfaces";
-import { TextContainer } from "../components/TextContainer";
-import { NextPage } from "next";
-import { Container } from "../components/Container";
+import { TextContainer } from "@/components/TextContainer";
 import Image from "next/image";
 
-import RaxLogo from "../public/raxter.svg";
-import ISROLogo from "../public/isro.png";
-import MetaLogo from "../public/meta.png";
+import RaxLogo from "@/public/raxter.svg";
+import ISROLogo from "@/public/isro.png";
+import MetaLogo from "@/public/meta.png";
+
+export const metadata = {
+  title: `Work | Het Thakkar`,
+  description: `Places where Het Thakkar has worked including the job responsibilities, achievements and positions`,
+};
 
 const Sep = <span className="-mt-2.5 hidden sm:block">|</span>;
 
-const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
+export default function Work() {
   return (
-    <Container
-      head={{
-        title: `Work | Het Thakkar`,
-        description: `Places where Het Thakkar has worked including the job responsibilities, achievements and positions`,
-      }}
-    >
+    <>
       <div className="content-box text-white font-bold text-4xl mb-10 mt-8">
         Work Experience
       </div>
@@ -134,8 +131,6 @@ const Work: NextPage<IBaseProps> = (props: IBaseProps) => {
           May 2019 - July 2019 | <i>Ahmedabad, India</i>
         </div>
       </TextContainer>
-    </Container>
+    </>
   );
-};
-
-export default Work;
+}

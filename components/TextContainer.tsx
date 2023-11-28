@@ -1,30 +1,34 @@
-import cn from 'classnames'
-import { motion, MotionProps } from 'framer-motion'
+"use client";
+
+import cn from "classnames";
+import { motion, MotionProps } from "framer-motion";
 
 interface TextContainerProps extends MotionProps {
-  className?: string
+  className?: string;
+  children: React.ReactNode;
 }
 
-const defaultProps: TextContainerProps = {
+const defaultProps: MotionProps = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, ease: 'easeOut' },
-}
+  transition: { duration: 0.4, ease: "easeOut" },
+};
 
-const TextContainer: React.FC<TextContainerProps> = (props) => {
+const TextContainer: React.FC<TextContainerProps> = ({
+  children,
+  className,
+}) => {
   return (
     <motion.div
-      {...props}
+      {...defaultProps}
       className={cn(
-        'bg-grayBg rounded-lg w-full max-w-2xl mx-auto p-8',
-        props.className
+        "bg-grayBg rounded-lg w-full max-w-2xl mx-auto p-8",
+        className
       )}
     >
-      {props.children}
+      {children}
     </motion.div>
-  )
-}
+  );
+};
 
-TextContainer.defaultProps = defaultProps
-
-export { TextContainer }
+export { TextContainer };

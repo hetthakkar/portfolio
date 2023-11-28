@@ -1,49 +1,21 @@
-// Auxillary react functional component to fill up seo stuff
-import Head from 'next/head'
+import { Metadata } from "next";
 interface ContainerProps {
-  children: React.ReactNode
+  children: React.ReactNode;
   head?: {
-    title?: string
-    description?: string
-    canonical?: string
-  }
+    title?: string;
+    description?: string;
+    canonical?: string;
+  };
 }
 
-export const Container: React.FC<ContainerProps> = ({ children, head }) => {
-  const headElements = {
-    title: 'Het Thakkar — Software developer',
-    description:
-      'Het Thakkar, a software developer and masters student at NC State',
-    url: 'https://hetthakkar.me',
-    type: 'website',
-    image: 'https://hetthakkar.me/profile.png',
-    twitterImage: 'https://hetthakkar.me/profile.png',
-    robots: 'index, follow',
-    ...head,
-  }
+export const metdata: Metadata = {
+  title: "Het Thakkar",
+  metadataBase: new URL("https://hetthakkar.me"),
+  description: "Het Thakkar's personal website",
+  openGraph: { images: [{ url: "https://hetthakkar.me/profile.png" }] },
+  robots: "index, follow",
+};
 
-  return (
-    <>
-      <Head>
-        <title>{headElements.title}</title>
-        <meta name='description' content={headElements.description} />
-        <meta name='robots' content={headElements.robots} />
-        <meta name='image' content={headElements.image} />
-        <meta name='url' content={headElements.url} />
-        <meta name='type' content={headElements.type} />
-        <meta name='og:title' content={headElements.title} />
-        <meta name='og:type' content={headElements.type} />
-        <meta name='og:image' content={headElements.image} />
-        <meta name='twitter:image' content={headElements.twitterImage} />
-        <meta name='og:url' content={headElements.url} />
-        <meta name='og:description' content={headElements.description} />
-        {headElements.canonical && <link rel='canonical' href={headElements.canonical} />}
-      </Head>
-      <main>{children}</main>
-    </>
-  )
-}
-
-Container.defaultProps = {
-  head: {},
-}
+export const Container: React.FC<ContainerProps> = ({ children }) => {
+  return <main>{children}</main>;
+};

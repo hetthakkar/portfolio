@@ -1,33 +1,31 @@
-import { IBaseProps } from "../../common/interfaces";
-import { NextPage } from "next";
-import { BookCard } from "../../components/BookCard";
-import { Container } from "../../components/Container";
-import bookCover from "../../public/the_dark_forest.jpg";
+import { BookCard } from "@/components/BookCard";
+import ExternalLink from "@/components/icons/ExternalLink";
 import Link from "next/link";
-import Image from "next/image";
-import waves from "../../public/waves.png";
-import ExternalLink from "../../components/icons/ExternalLink";
+import waves from "@/public/waves.png";
 
-const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
+import Image from "next/image";
+import bookCover from "@/public/fall_of_hyperion.jpg";
+
+export const metadata = {
+  title: "Misc | Het Thakkar",
+  description:
+    "Miscellaneous information about Het Thakkar like reading lists, music and playlists",
+};
+
+export default function Misc() {
   return (
-    <Container
-      head={{
-        title: "Misc | Het Thakkar",
-        description:
-          "Miscellaneous information about Het Thakkar like reading lists, music and playlists",
-      }}
-    >
+    <>
       <h1 className="content-box text-white font-bold text-4xl mb-10 mt-8">
         Currently Reading
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="The Dark Forest"
-          author="Cixin Liu"
-          description="After picking up the Remembrance of Earth's Past trilogy, I was hooked on Cixin Liu's writing. The Dark Forest is the second book in the trilogy and I am really enjoying it so far. The book is a sequel to The Three-Body Problem and continues the story of the Trisolaran invasion of Earth. The book is a bit more philosophical than the first book and I am really enjoying it."
+          title="Fall of Hyperion"
+          author="Dan Simmons"
+          description="After reading Hyperion, I was hooked on Dan Simmons' writing. Fall of Hyperion is the second book in the Hyperion Cantos and continues the story of the pilgrims and their journey to the Time Tombs. The book is a bit more philosophical than the first book and I am really enjoying it so far."
           cover={bookCover}
-          coverWidth={700}
-          coverHeight={360}
+          coverWidth={600}
+          coverHeight={320}
           className="mb-8 md:max-h-64"
         />
       </div>
@@ -35,7 +33,7 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
         Check out my generative art
       </div>
       <Link href="/misc/waves" passHref={true}>
-        <div className="w-full codemax-w-2xl mx-auto flex md:flex-col overflow-hidden justify-start items-center">
+        <div className="w-full codemax-w-2xl mx-auto flex md:flex-col overflow-hidden justify-center items-center">
           <div className="flex flex-col justify-center items-center bg-grayLight rounded-lg">
             <Image src={waves} alt="Waves artwork" width={300} height={280} />
             <p className="text-white px-4 pb-2 pt-1 hover:underline">
@@ -78,8 +76,6 @@ const Misc: NextPage<IBaseProps> = (props: IBaseProps) => {
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         ></iframe>
       </div>
-    </Container>
+    </>
   );
-};
-
-export default Misc;
+}
