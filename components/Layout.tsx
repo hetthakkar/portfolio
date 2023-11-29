@@ -10,7 +10,7 @@ export function Layout({
   children,
 }: {
   children: React.ReactNode;
-}): JSX.Element {
+}): React.ReactNode {
   return (
     <div className="min-h-screen bg-gradient-to-b from-grayLight to-grayDark">
       <div className="page min-h-screen">
