@@ -6,11 +6,7 @@ import LinkedInIcon from "./icons/LinkedInIcon";
 import SpotifyIcon from "./icons/SpotifyIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 
-export function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}): React.ReactNode {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-grayLight to-grayDark">
       <div className="page min-h-screen">
