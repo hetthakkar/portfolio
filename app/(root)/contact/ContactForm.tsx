@@ -2,7 +2,7 @@
 
 import { useFormState } from "react-dom";
 import Submit from "./Submit";
-import { submitForm } from "../../actions";
+import { submitForm } from "@/utils/actions";
 
 export default function ContactForm() {
   return (

@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { Container } from "../components/Container";
+import { Container } from "@/components/Container";
 
 import Image from "next/image";
-import ProfilePicture from "../public/profile.jpg";
-import { TextContainer } from "../components/TextContainer";
+import ProfilePicture from "@/public/profile.jpg";
+import { TextContainer } from "@/components/TextContainer";
 
 export const metadata = {
   title: `Het Thakkar`,

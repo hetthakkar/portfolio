@@ -10,7 +10,9 @@
     "esModuleInterop": true,
     "paths": {
       "@/components/*": ["./components/*"],
-      "@/public/*": ["./public/*"]
+      "@/public/*": ["./public/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/utils/*": ["./utils/*"]
     },
     "module": "esnext",
     "moduleResolution": "node",
