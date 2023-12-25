@@ -4,8 +4,17 @@ import p5Types from "p5";
 import { useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import { SearchParams } from "./utils";
+import { Spinner } from "@/components/Spinner";
 
-const Sketch = dynamic(() => import("react-p5"), { ssr: false });
+const Sketch = dynamic(() => import("react-p5"), {
+  ssr: false,
+  suspense: true,
+  loading: () => (
+    <div className="h-full grid place-items-center">
+      <Spinner />
+    </div>
+  ),
+});
 
 const FRAME_RATE = 60;
 

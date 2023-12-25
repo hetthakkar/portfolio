@@ -1,8 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
 
-const Spinner: React.FC<{className?: string}> = ({ className, ...props }) => (
-  <svg width={38} height={38} stroke="#fff" viewBox="0 0 38 38" className={`svg-loaders-svg${className ? ` ${className}` : ''}`} {...props}>
+const Spinner: React.FC<{ className?: string }> = ({ className, ...props }) => (
+  <svg
+    width={38}
+    height={38}
+    stroke="#fff"
+    viewBox="0 0 38 38"
+    className={`svg-loaders-svg${className ? ` ${className}` : ""}`}
+    {...props}
+  >
     <g
       transform="translate(1 1)"
       strokeWidth={2}
@@ -23,14 +29,5 @@ const Spinner: React.FC<{className?: string}> = ({ className, ...props }) => (
     </g>
   </svg>
 );
-
-
-Spinner.propTypes = {
-  className: PropTypes.string,
-};
-
-Spinner.defaultProps = {
-  className: undefined,
-};
 
 export { Spinner };
