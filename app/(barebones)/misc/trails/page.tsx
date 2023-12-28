@@ -8,7 +8,9 @@ export const metadata = {
 export default function TrailsPage() {
   return (
     <div className="w-screen h-screen bg-black flex flex-col justify-center items-center">
-      <h4 className="text-white text-xl font-extralight mb-4r">Tap anywhere</h4>
+      <h4 className="text-white text-xl font-extralight mb-4r">
+        Tap left to right
+      </h4>
       <TrailsSketchWithWrapper />
     </div>
   );
