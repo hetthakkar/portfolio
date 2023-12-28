@@ -4,7 +4,7 @@ import Link from "next/link";
 import waves from "@/public/waves.png";
 
 import Image from "next/image";
-import bookCover from "@/public/fall_of_hyperion.jpg";
+import bookCover from "@/public/endymion.jpg";
 
 export const metadata = {
   title: "Misc | Het Thakkar",
@@ -20,12 +20,12 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="Fall of Hyperion"
+          title="Endymion"
           author="Dan Simmons"
-          description="After reading Hyperion, I was hooked on Dan Simmons' writing. Fall of Hyperion is the second book in the Hyperion Cantos and continues the story of the pilgrims and their journey to the Time Tombs. The book is a bit more philosophical than the first book and I am really enjoying it so far."
+          description="Despite the mixed reviews on this one, I am picking it up because I really enjoyed the first two books in the series. Hoping it will be a good read!"
           cover={bookCover}
-          coverWidth={600}
-          coverHeight={320}
+          coverWidth={300}
+          coverHeight={100}
           className="mb-8 md:max-h-64"
         />
       </div>
