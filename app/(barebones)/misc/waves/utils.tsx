@@ -18,7 +18,7 @@ export const getRandomInt = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-const getRandomFloat = (min: number, max: number) => {
+export const getRandomFloat = (min: number, max: number) => {
   return Math.random() * (max - min) + min;
 };
 
