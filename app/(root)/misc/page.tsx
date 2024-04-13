@@ -50,7 +50,7 @@ export default function Misc() {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/gaI7fdfyBHQ"
+          src="https://www.youtube.com/embed/1UCdB8Nw5JI"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -58,8 +58,7 @@ export default function Misc() {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-          Anjunadeep 14 - Mixed By James Grant & Jody Wisternoff (Live from
-          Qarraba Bay, Malta)
+          Marsh DJ Set - Live from Kew Gardens, London
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>
