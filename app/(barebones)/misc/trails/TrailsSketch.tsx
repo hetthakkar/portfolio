@@ -4,7 +4,7 @@ import ClientSketchWrapper from "@/components/ClientSketch";
 import P5 from "p5";
 import { getRandomFloat, getRandomInt } from "../waves/utils";
 
-const PERIOD = 1;
+const PERIOD = 3;
 const FRAME_RATE = 120;
 
 const identity = (x: number) => x;
@@ -70,7 +70,8 @@ export default function TrailsSketch() {
       Math.min(Math.max(p5.mouseX / width, 0.25), 0.75) *
       randomPeriodMultiplier;
 
-    const x = ((currentPosition * Math.PI) / 2) * periodMultiplier;
+    const x = currentPosition * Math.PI * periodMultiplier;
+
     const y = (Math.cos(x) * height) / 2 + height / 2;
     const y1 = (Math.cos(x - Math.PI) * height) / 2 + height / 2;
     const y2 = (Math.sin(x - Math.PI / 2) * height) / 2 + height / 2;
@@ -94,23 +95,44 @@ export default function TrailsSketch() {
     p5.fill(255);
 
     p5.circle(currentPosition * width, y, 2);
+    p5.circle(width - currentPosition * width, y, 2);
+
     p5.circle(currentPosition * width, y1, 2);
+    p5.circle(width - currentPosition * width, y1, 2);
+
     p5.circle(currentPosition * width, y2, 2);
+    p5.circle(width - currentPosition * width, y2, 2);
+
     p5.circle(currentPosition * width, y3, 2);
-    p5.line(currentPosition * width, y, currentPosition * width, y1);
+    p5.circle(width - currentPosition * width, y3, 2);
+
+    p5.circle(currentPosition * width, y4, 2);
+    p5.circle(width - currentPosition * width, y4, 2);
+
+    // p5.line(currentPosition * width, y, currentPosition * width, y1);
+    // p5.line(width - currentPosition * width, y, currentPosition * width, y1);
+
+    p5.line(currentPosition * width, y, currentPosition * width, y2);
+    p5.line(width - currentPosition * width, y, currentPosition * width, y2);
+
+    p5.line(currentPosition * width, y2, currentPosition * width, y);
+    p5.line(width - currentPosition * width, y2, currentPosition * width, y);
+
     p5.line(0, y, width, y);
     // p5.line(0, y1, width, y1);
     // p5.line(0, y2, width, y2);
     p5.line(currentPosition * width, y1, width, y3);
-    p5.line(width - currentPosition * width, y3, currentPosition * width, y1);
-    p5.line(width - currentPosition * width, y3, width, y2);
-    p5.line(width - currentPosition * width, y3, width, y);
-    p5.line(currentPosition * width, y, width - currentPosition * width, y3);
-    p5.line(width - currentPosition * width, y3, currentPosition * width, y1);
-    p5.line(width - currentPosition * width, y4, currentPosition * width, y);
-    p5.line(currentPosition * width, y4, currentPosition * width, y1);
-    p5.line(currentPosition * width, y4, width - currentPosition * width, y);
-    p5.line(currentPosition * width, y4, width - currentPosition * width, y3);
+    p5.line(width - currentPosition * width, y1, width, y3);
+
+    // p5.line(width - currentPosition * width, y3, currentPosition * width, y1);
+    // p5.line(width - currentPosition * width, y3, width, y2);
+    // p5.line(width - currentPosition * width, y3, width, y);
+    // p5.line(currentPosition * width, y, width - currentPosition * width, y3);
+    // p5.line(width - currentPosition * width, y3, currentPosition * width, y1);
+    // p5.line(width - currentPosition * width, y4, currentPosition * width, y);
+    // p5.line(currentPosition * width, y4, currentPosition * width, y1);
+    // p5.line(currentPosition * width, y4, width - currentPosition * width, y);
+    // p5.line(currentPosition * width, y4, width - currentPosition * width, y3);
 
     // drawRandomCurves.forEach((drawRandomCurve) =>
     //   drawRandomCurve(p5, currentPosition)

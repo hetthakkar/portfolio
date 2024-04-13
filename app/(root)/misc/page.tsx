@@ -4,7 +4,7 @@ import Link from "next/link";
 import waves from "@/public/waves.png";
 
 import Image from "next/image";
-import bookCover from "@/public/endymion.jpg";
+import bookCover from "@/public/leviathan_wakes.jpg";
 
 export const metadata = {
   title: "Misc | Het Thakkar",
@@ -20,9 +20,9 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="Endymion"
-          author="Dan Simmons"
-          description="Despite the mixed reviews on this one, I am picking it up because I really enjoyed the first two books in the series. Hoping it will be a good read!"
+          title="Leviathan Wakes"
+          author="James A. Corey"
+          description="Always been intrigued by the description of this book as a space opera, and I'm finally getting around to reading it. So far, it's been a great read!"
           cover={bookCover}
           coverWidth={300}
           coverHeight={100}
