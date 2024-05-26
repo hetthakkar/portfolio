@@ -20,7 +20,7 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="10 Myhts About Israel"
+          title="10 Myths About Israel"
           author="Ilan Pappe"
           description="In order to understand the current situation in Palestine, I first read the 100 Year War On Palestine by Prof Rashid Khalidi and now reading this book to round off my understanding of the conflict. "
           cover={bookCover}
