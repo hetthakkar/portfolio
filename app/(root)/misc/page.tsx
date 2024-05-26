@@ -4,7 +4,7 @@ import Link from "next/link";
 import waves from "@/public/waves.png";
 
 import Image from "next/image";
-import bookCover from "@/public/leviathan_wakes.jpg";
+import bookCover from "@/public/myths_israel.webp";
 
 export const metadata = {
   title: "Misc | Het Thakkar",
@@ -20,9 +20,9 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="Leviathan Wakes"
-          author="James A. Corey"
-          description="Always been intrigued by the description of this book as a space opera, and I'm finally getting around to reading it. So far, it's been a great read!"
+          title="10 Myhts About Israel"
+          author="Ilan Pappe"
+          description="In order to understand the current situation in Palestine, I first read the 100 Year War On Palestine by Prof Rashid Khalidi and now reading this book to round off my understanding of the conflict. "
           cover={bookCover}
           coverWidth={300}
           coverHeight={100}
@@ -50,7 +50,7 @@ export default function Misc() {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/1UCdB8Nw5JI"
+          src="https://www.youtube.com/embed/kA5rTbtIKKg"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -58,7 +58,8 @@ export default function Misc() {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-          Marsh DJ Set - Live from Kew Gardens, London
+          James Grant & Jody Wisternoff | Anjunadeep London at the Roundhouse
+          (4K)
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>
