@@ -10,7 +10,7 @@ const ClientSketch = dynamic(() => import("react-p5"), {
   ssr: false,
   suspense: true,
   loading: () => (
-    <div className="h-full grid place-items-center">{<Spinner />}</div>
+    <div className="h-screen w-full grid place-items-center">{<Spinner />}</div>
   ),
 });
 

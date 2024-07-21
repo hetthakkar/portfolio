@@ -4,7 +4,7 @@ import Link from "next/link";
 import waves from "@/public/waves.png";
 
 import Image from "next/image";
-import bookCover from "@/public/myths_israel.webp";
+import bookCover from "@/public/story_of_art.jpg";
 
 export const metadata = {
   title: "Misc | Het Thakkar",
@@ -20,9 +20,9 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="10 Myths About Israel"
-          author="Ilan Pappe"
-          description="In order to understand the current situation in Palestine, I first read the 100 Year War On Palestine by Prof Rashid Khalidi and now reading this book to round off my understanding of the conflict. "
+          title="Story of Art"
+          author="E.H. Gombrich"
+          description="I often find myself wanting to understand art and it's purpose in society. This book is a great introduction to the history of art and how it has evolved over time."
           cover={bookCover}
           coverWidth={300}
           coverHeight={100}
@@ -50,7 +50,7 @@ export default function Misc() {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/kA5rTbtIKKg"
+          src="https://www.youtube.com/embed/byGPEiHbsnc"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -58,8 +58,8 @@ export default function Misc() {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-          James Grant & Jody Wisternoff | Anjunadeep London at the Roundhouse
-          (4K)
+          Anjunadeep 15 - Mixed By Jody Wisternoff & James Grant (Live from
+          Iceland) [4K Sunset Mix]
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>
