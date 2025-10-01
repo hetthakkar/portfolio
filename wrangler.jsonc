@@ -28,5 +28,11 @@
     //   "binding": "NEXT_INC_CACHE_R2_BUCKET",
     //   "bucket_name": "<BUCKET_NAME>",
     // },
+  ],
+  "routes": [
+    {
+      "pattern": "hetthakkar.dev/*",
+      "zone_name": "hetthakkar.dev"
+    }
   ]
 }
