@@ -60,7 +60,6 @@ export const MobileNavBar: React.FC = () => {
             <MobileNavItem href="/work" text="Work Experience" />
             <MobileNavItem href="/education" text="Education" />
             <MobileNavItem href="/misc" text="Misc" />
-            <MobileNavItem href="/contact" text="Contact" />
           </div>
         </motion.div>
       )}

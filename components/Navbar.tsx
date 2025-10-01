@@ -21,7 +21,6 @@ export const NavBar: React.FC = () => {
       <NavItem href="/work" text="Work Experience" />
       <NavItem href="/education" text="Education" />
       <NavItem href="/misc" text="Misc" />
-      <NavItem href="/contact" text="Contact" />
     </header>
   );
 };

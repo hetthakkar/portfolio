@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  output: 'standalone',
+}
+
+module.exports = nextConfig
+
+// Setup Cloudflare Workers development platform
+if (process.env.NODE_ENV === 'development') {
+  import('@opennextjs/cloudflare').then(({ initOpenNextCloudflareForDev }) => {
+    initOpenNextCloudflareForDev()
+  })
 }
