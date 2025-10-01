@@ -12,9 +12,9 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",
-    "@sendgrid/mail": "^7.6.0",
+    "@sendgrid/mail": "^8.1.6",
     "@vercel/analytics": "^0.1.2",
-    "axios": "^0.24.0",
+    "axios": "^1.12.2",
     "classnames": "^2.3.1",
     "framer-motion": "^5.3.1",
     "next": "^14.0.0",
