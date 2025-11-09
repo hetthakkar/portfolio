@@ -4,7 +4,7 @@ import Link from "next/link";
 import waves from "@/public/waves.png";
 
 import Image from "next/image";
-import bookCover from "@/public/story_of_art.jpg";
+import bookCover from "@/public/myth_of_sisyphus.jpg";
 
 export const metadata = {
   title: "Misc | Het Thakkar",
@@ -20,9 +20,9 @@ export default function Misc() {
       </h1>
       <div className="flex flex-col justify-center items-center flex-wrap w-full max-w-2xl mx-auto">
         <BookCard
-          title="Story of Art"
-          author="E.H. Gombrich"
-          description="I often find myself wanting to understand art and it's purpose in society. This book is a great introduction to the history of art and how it has evolved over time."
+          title="The Myth of Sisyphus"
+          author="Albert Camus"
+          description="A philosophical essay exploring the concept of the absurd and the human condition. Perfect for my quarter life crisis."
           cover={bookCover}
           coverWidth={300}
           coverHeight={100}
@@ -50,7 +50,7 @@ export default function Misc() {
         <iframe
           className="w-full"
           height="315"
-          src="https://www.youtube.com/embed/byGPEiHbsnc"
+          src="https://www.youtube.com/embed/tYGqfWUjIxY"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -58,8 +58,7 @@ export default function Misc() {
       </div>
       <div className="content-box text-white mb-4 p-2 md:p-4 rounded-b-lg bg-grayLight flex flex-col">
         <span className=" font-normal text-2xl">
-          Anjunadeep 15 - Mixed By Jody Wisternoff & James Grant (Live from
-          Iceland) [4K Sunset Mix]
+        YOTTO | Anjunadeep Open Air: London 2025 (Official Set)
         </span>
         <span className="font-thin text-base mt-2 leading-5"></span>
       </div>
